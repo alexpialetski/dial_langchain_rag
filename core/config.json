@@ -1,0 +1,24 @@
+{
+  "routes": {},
+  "applications": {
+    "book_assistant": {
+      "displayName": "Book assistant application",
+      "description": "Simple RAG application that helps user to choose a book",
+      "endpoint": "http://book_assistant:5000/openai/deployments/book_assistant/chat/completions"
+    }
+  },
+  "models": {},
+  "keys": {
+    "dial_api_key": {
+      "project": "TEST-PROJECT",
+      "role": "default"
+    }
+  },
+  "roles": {
+    "default": {
+      "limits": {
+        "book_assistant": {}
+      }
+    }
+  }
+}
